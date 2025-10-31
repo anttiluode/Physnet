@@ -63,3 +63,40 @@ Compare against EWC / SI baselines
 
 Visualize field attractors over training
 Try the physics core as a plug-in module in other architectures
+
+# Example results
+
+Using device: cuda
+Loading data...
+
+--- TRAINING ON TASK 1 (Normal MNIST) ---
+Epoch 1/5
+Epoch 2/5
+Epoch 3/5
+Epoch 4/5
+Epoch 5/5
+Test set: Avg. loss: 0.0431, Accuracy: 9886/10000 (98.86%)
+
+Final Task 1 Accuracy (after Task 1): 98.86%
+
+--- TRAINING ON TASK 2 (Permuted MNIST) ---
+Epoch 1/5
+Epoch 2/5
+Epoch 3/5
+Epoch 4/5
+Epoch 5/5
+Test set: Avg. loss: 0.1354, Accuracy: 9593/10000 (95.93%)
+
+Final Task 2 Accuracy (after Task 2): 95.93%
+
+--- FORGETTING TEST (Testing Task 1 again) ---
+Test set: Avg. loss: 1.1666, Accuracy: 7243/10000 (72.43%)
+
+--- 🔥 RESULTS 🔥 ---
+Task 1 (Original):   98.86%
+Task 2 (Permuted):   95.93%
+Task 1 (After T2): 72.43%
+Catastrophic Forgetting: 26.43%
+
+🧠 Note: Model accuracy is high, but forgetting (26.43%) is also significant.
+
