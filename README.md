@@ -1,6 +1,6 @@
 # 🧠 PhysNet — Differentiable Physics Neural Network
 
-(Vibecoded. Ask from AI to explain it to you. 
+(Vibecoded. Ask from AI to explain it to you. )
 
 Version: 0.1 — Research Prototype
 License: MIT
